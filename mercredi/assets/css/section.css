@@ -15,13 +15,14 @@ section{
     margin: auto;
     min-height: 60vh;
     position: relative;
+    margin-top: 30px;
 }
 
 /* first section */
 main section:first-child figure.left::before{
     content: '';
     position: absolute;
-    top: -20px;
+    top: -10px;
     left: -30px;
     width: 350px;
     height: 233px;
@@ -33,8 +34,8 @@ main section:first-child figure.left::before{
 main section:last-child figure.left::before{
     content: '';
     position: absolute;
-    top: -30px;
-    right: -30px;
+    top: -15px;
+    right: 130px;
     width: 350px;
     height: 233px;
     border: 2px solid #c89446;
@@ -79,7 +80,8 @@ article hgroup{
 article hgroup h3{
     font-family: 'Caveat Brush', cursive;
     color: gray;
-    font-size:20px;
+    font-size:30px;
+    padding-bottom: 5px;
 }
 
 hgroup + hr{
