@@ -1,0 +1,104 @@
+/* @import */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Jost', sans-serif;
+}
+
+/* Photo by Shawn Ang on Unsplash */
+
+/* font txt */
+/* font family: 'Caveat Brush', cursive;
+font family:'Jost', sans-serif */
+
+/* header */
+/* "../" is to return to previous folder */
+header{
+    background: url(../img/slider.jpg) 0 0 no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 80vh;
+    /* position items inside header */
+    padding-top: 20vh;
+    padding-left: 50px;
+}
+
+/* virgule = mais aussi h1 */
+h3,h1{
+    font-family: 'Caveat Brush', cursive;
+    text-align: center;
+}
+
+h1{
+    font-size: 30px;
+    /* font-weight: lighter; font-weight is for light/bold/regular etc...*/
+}
+
+h3{
+    color: #c89446;
+    font-size: 50px;
+}
+
+h2{
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+}
+
+hgroup{
+    color: seashell;
+    width: 320px;
+    margin: auto;
+    text-shadow: 1px 1px 10px black;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/* put hover only on li from navbar */
+li a:hover{
+    color: white;
+    background-color: teal;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 8vh;
+    z-index: 10;
+    padding-left: 2px;
+}
+
+nav ul{
+    list-style: none;
+    width: 75vh;
+    float: right;
+}
+
+nav a#logo{
+    font-size: 30px;
+    color: white;
+    font-family: 'Caveat Brush', cursive;
+    float: left;
+    width: 200px;
+    height: 8vh;
+    text-align: center;
+    line-height: 8vh;
+}
+
+nav ul li{
+    margin: 2px;
+    display: inline-block;
+    height: 8vh;
+    width: 100px;
+    text-align: center;
+    line-height: 8vh;
+    font-family: 'Jost', sans-serif;
+}

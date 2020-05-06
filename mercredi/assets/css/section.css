@@ -1,0 +1,113 @@
+@import url(style.css);
+
+/* font family: 'Caveat Brush', cursive;
+font family:'Jost', sans-serif */
+
+/* Photo by Chris Liverani on Unsplash */
+
+main{
+    width: 100%;
+    min-height:100vh;
+}
+
+section{
+    width: 70%;
+    margin: auto;
+    min-height: 60vh;
+    position: relative;
+}
+
+/* first section */
+main section:first-child figure.left::before{
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -30px;
+    width: 350px;
+    height: 233px;
+    border: 2px solid #c89446;
+    z-index: 0;
+}
+
+/* 2e section */
+main section:last-child figure.left::before{
+    content: '';
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 350px;
+    height: 233px;
+    border: 2px solid #c89446;
+    z-index: 0;
+}
+
+/* what look like when not hover */
+figure img:not(:hover){
+    position: relative;
+    z-index: 1;
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    /* put in greyscale 1 is active 0 is inactive */
+    filter: grayscale(1);
+}
+
+figure img:hover{
+    filter: grayscale(0);
+}
+
+figure{
+    padding-top:20px;
+    cursor: pointer;
+}
+
+article{
+    width:50%;
+    padding: 30px;
+}
+
+figure,article{
+    float: left;
+}
+
+article hgroup{
+    color: gray;
+    text-shadow: 0 0 0 transparent;
+    font-family:'Jost', sans-serif;
+}
+
+article hgroup h3{
+    font-family: 'Caveat Brush', cursive;
+    color: gray;
+    font-size:20px;
+}
+
+hgroup + hr{
+    width: 30px;
+    border:2px solid #c89446;
+    margin: 20px 0;
+    margin: auto;
+}
+
+article p{
+    width: 80%;
+    margin: 0 auto 20px;
+    margin-left: 30px;
+}
+
+article a{
+    color: #c89446;
+    margin-left: 60px;
+}
+
+article a::after{
+    color: #c89446;
+    display: inline-block;
+    margin-left: 7px;
+    content: '>';
+    transition: .5s;
+}
+
+article a:hover::after{
+    margin-left: 20px;
+}
